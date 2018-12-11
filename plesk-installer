@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wget http://autoinstall.plesk.com/plesk-installer
+chmod +x plesk-installer
+./plesk-installer
