@@ -1,0 +1,7 @@
+#!/bin/bash
+
+apt-get update && apt-get install aptitude git wget -y && aptitude update && aptitude safe-upgrade -y
+
+wget http://autoinstall.plesk.com/plesk-installer
+chmod +x plesk-installer
+./plesk-installer --all-version
