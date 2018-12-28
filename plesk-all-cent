@@ -1,0 +1,7 @@
+#!/bin/bash
+
+yum install epel-release git wget -y && yum remove firewalld -y && yum update -y
+
+wget http://autoinstall.plesk.com/plesk-installer
+chmod +x plesk-installer
+./plesk-installer --all-version
